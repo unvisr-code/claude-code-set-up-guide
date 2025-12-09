@@ -12,7 +12,7 @@ interface StepsSectionProps {
 
 // Video sources for each OS (null = placeholder, undefined = hide section)
 const videoSources: Record<OS, string | null | undefined> = {
-  macos: "/claude-code-set-up-mac.mov",
+  macos: "/claude-code-set-up-mac.mp4",
   "windows-wsl": undefined, // No video section for WSL
   "windows-native": "/claude-code-set-up-windows.mp4",
 };
