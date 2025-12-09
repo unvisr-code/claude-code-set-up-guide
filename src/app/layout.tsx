@@ -2,29 +2,29 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Pre-Academy 준비사항 가이드 | 경기 기후 바이브코딩 해커톤",
-  description: "해커톤 참가 전 필요한 계정 생성과 Claude Code CLI 설치 방법을 안내합니다.",
+  title: "준비사항 가이드 | 경기 기후 바이브코딩 해커톤",
+  description: "GitHub, Vercel 가입부터 Claude Code CLI 설치까지 해커톤 참가에 필요한 준비사항을 단계별로 안내합니다.",
   icons: {
-    icon: "/gg-bi-logo.png",
-    apple: "/gg-bi-logo.png",
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
   },
   openGraph: {
-    title: "Pre-Academy 준비사항 가이드 | 경기 기후 바이브코딩 해커톤",
-    description: "해커톤 참가 전 필요한 계정 생성과 Claude Code CLI 설치 방법을 안내합니다.",
+    title: "준비사항 가이드",
+    description: "GitHub, Vercel 가입부터 Claude Code CLI 설치까지 해커톤 참가에 필요한 준비사항을 단계별로 안내합니다.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Claude Code 설치 가이드",
+        alt: "경기 기후 바이브코딩 해커톤 준비사항 가이드",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pre-Academy 준비사항 가이드 | 경기 기후 바이브코딩 해커톤",
-    description: "해커톤 참가 전 필요한 계정 생성과 Claude Code CLI 설치 방법을 안내합니다.",
+    title: "준비사항 가이드",
+    description: "GitHub, Vercel 가입부터 Claude Code CLI 설치까지 해커톤 참가에 필요한 준비사항을 단계별로 안내합니다.",
     images: ["/og-image.png"],
   },
 };
