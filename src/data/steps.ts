@@ -8,9 +8,9 @@ export interface InstallationGuide {
   steps: Step[];
 }
 
-// 공통 단계: GitHub 계정 생성
-const githubStep: Step = {
-  number: 1,
+// GitHub 계정 생성 단계 생성 함수
+const createGithubStep = (stepNumber: number): Step => ({
+  number: stepNumber,
   title: "GitHub 계정 생성",
   description:
     "GitHub는 코드를 저장하고 공유하는 플랫폼입니다. 해커톤에서 프로젝트를 관리하기 위해 계정이 필요합니다.",
@@ -30,11 +30,11 @@ const githubStep: Step = {
         "이미 GitHub 계정이 있다면 이 단계를 건너뛰고 다음 단계로 진행하세요.",
     },
   ],
-};
+});
 
-// 공통 단계: Vercel 계정 생성
-const vercelStep: Step = {
-  number: 2,
+// Vercel 계정 생성 단계 생성 함수
+const createVercelStep = (stepNumber: number): Step => ({
+  number: stepNumber,
   title: "Vercel 계정 생성",
   description:
     "Vercel은 웹사이트를 쉽게 배포할 수 있는 플랫폼입니다. GitHub 계정으로 간편하게 가입할 수 있습니다.",
@@ -53,7 +53,7 @@ const vercelStep: Step = {
         "GitHub 계정으로 로그인하면 자동으로 연동되어, 나중에 프로젝트 배포 시 편리합니다.",
     },
   ],
-};
+});
 
 export const windowsWslGuide: InstallationGuide = {
   preNote: {
@@ -65,10 +65,8 @@ export const windowsWslGuide: InstallationGuide = {
     ],
   },
   steps: [
-    githubStep,
-    vercelStep,
     {
-      number: 3,
+      number: 1,
       title: "WSL(Windows Subsystem for Linux) 설치",
       description:
         "WSL은 윈도우 안에서 리눅스 터미널을 사용할 수 있게 해주는 기능입니다. 먼저 WSL을 설치해 리눅스 환경(Ubuntu)을 준비합니다.",
@@ -108,7 +106,7 @@ export const windowsWslGuide: InstallationGuide = {
       },
     },
     {
-      number: 4,
+      number: 2,
       title: "Ubuntu 설치 및 계정 만들기",
       description:
         "WSL 위에서 돌아가는 리눅스 배포판인 Ubuntu를 설치합니다.",
@@ -128,7 +126,7 @@ export const windowsWslGuide: InstallationGuide = {
       ],
     },
     {
-      number: 5,
+      number: 3,
       title: "Node.js와 npm 설치",
       description:
         "Claude Code는 Node.js 기반 도구이므로, 먼저 Node.js와 패키지 관리자 npm을 설치합니다.",
@@ -149,7 +147,7 @@ export const windowsWslGuide: InstallationGuide = {
       ],
     },
     {
-      number: 6,
+      number: 4,
       title: "Claude Code 설치",
       description: "이제 Claude Code CLI를 전역(global)으로 설치합니다.",
       instructions: [
@@ -169,9 +167,9 @@ export const windowsWslGuide: InstallationGuide = {
       },
     },
     {
-      number: 7,
+      number: 5,
       title: "설치가 잘 되었는지 확인",
-      description: "마지막으로 Claude Code가 제대로 설치되었는지 확인합니다.",
+      description: "Claude Code가 제대로 설치되었는지 확인합니다.",
       instructions: [
         "아래 명령어를 입력하고 <strong>Enter</strong>를 누릅니다.",
       ],
@@ -189,6 +187,8 @@ export const windowsWslGuide: InstallationGuide = {
         },
       ],
     },
+    createGithubStep(6),
+    createVercelStep(7),
   ],
 };
 
@@ -202,10 +202,8 @@ export const windowsNativeGuide: InstallationGuide = {
     ],
   },
   steps: [
-    githubStep,
-    vercelStep,
     {
-      number: 3,
+      number: 1,
       title: "PowerShell 관리자 권한으로 실행",
       description:
         "명령어를 입력할 PowerShell을 관리자 권한으로 실행합니다.",
@@ -224,7 +222,7 @@ export const windowsNativeGuide: InstallationGuide = {
       ],
     },
     {
-      number: 4,
+      number: 2,
       title: "Node.js 설치",
       description:
         "Windows 패키지 관리자(winget)를 사용해 Node.js를 설치합니다.",
@@ -241,7 +239,7 @@ export const windowsNativeGuide: InstallationGuide = {
       ],
     },
     {
-      number: 5,
+      number: 3,
       title: "Claude Code 설치",
       description: "npm을 사용해 Claude Code CLI를 전역으로 설치합니다.",
       instructions: [
@@ -257,9 +255,9 @@ export const windowsNativeGuide: InstallationGuide = {
       ],
     },
     {
-      number: 6,
+      number: 4,
       title: "설치가 잘 되었는지 확인",
-      description: "마지막으로 Claude Code가 제대로 설치되었는지 확인합니다.",
+      description: "Claude Code가 제대로 설치되었는지 확인합니다.",
       instructions: [
         "아래 명령어를 입력하고 <strong>Enter</strong>를 누릅니다.",
       ],
@@ -277,6 +275,8 @@ export const windowsNativeGuide: InstallationGuide = {
         },
       ],
     },
+    createGithubStep(5),
+    createVercelStep(6),
   ],
 };
 
@@ -289,10 +289,8 @@ export const macosGuide: InstallationGuide = {
     ],
   },
   steps: [
-    githubStep,
-    vercelStep,
     {
-      number: 3,
+      number: 1,
       title: "터미널 열기 & Homebrew 설치",
       description:
         "Homebrew는 macOS용 프로그램 설치 도구입니다. Node.js를 쉽게 설치하기 위해 먼저 Homebrew를 설치합니다.",
@@ -315,7 +313,7 @@ export const macosGuide: InstallationGuide = {
       ],
     },
     {
-      number: 4,
+      number: 2,
       title: "Node.js 설치",
       description: "Homebrew로 Node.js를 설치합니다.",
       instructions: [
@@ -334,7 +332,7 @@ export const macosGuide: InstallationGuide = {
       ],
     },
     {
-      number: 5,
+      number: 3,
       title: "Claude Code 설치",
       description: "npm을 사용해 Claude Code CLI를 전역으로 설치합니다.",
       instructions: [
@@ -354,7 +352,7 @@ export const macosGuide: InstallationGuide = {
       },
     },
     {
-      number: 6,
+      number: 4,
       title: "설치가 잘 되었는지 확인",
       description:
         "아래 명령어를 실행해 Claude Code 버전이 정상적으로 표시되는지 확인합니다.",
@@ -375,5 +373,7 @@ export const macosGuide: InstallationGuide = {
         },
       ],
     },
+    createGithubStep(5),
+    createVercelStep(6),
   ],
 };
