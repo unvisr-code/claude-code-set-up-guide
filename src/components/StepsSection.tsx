@@ -50,6 +50,7 @@ export default function StepsSection({ os, steps, preNote }: StepsSectionProps) 
               // Actual video player - preserves original aspect ratio
               <div className="bg-gray-900/50 border border-white/10 rounded-2xl overflow-hidden">
                 <video
+                  key={os}
                   className="w-full h-auto block object-contain"
                   controls
                   playsInline
