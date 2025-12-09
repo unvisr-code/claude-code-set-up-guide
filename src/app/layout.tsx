@@ -4,6 +4,29 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Claude Code 설치 가이드 | 경기 기후 바이브코딩 해커톤",
   description: "Windows와 macOS에서 Claude Code CLI를 설치하는 방법을 안내합니다.",
+  icons: {
+    icon: "/gg.png",
+    apple: "/gg.png",
+  },
+  openGraph: {
+    title: "Claude Code 설치 가이드 | 경기 기후 바이브코딩 해커톤",
+    description: "Windows와 macOS에서 Claude Code CLI를 설치하는 방법을 안내합니다.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Claude Code 설치 가이드",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Claude Code 설치 가이드 | 경기 기후 바이브코딩 해커톤",
+    description: "Windows와 macOS에서 Claude Code CLI를 설치하는 방법을 안내합니다.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
