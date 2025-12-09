@@ -300,10 +300,6 @@ export default function PreviewPage() {
                   </li>
                   <li className="flex items-center gap-2 text-gray-300">
                     <span className="w-1.5 h-1.5 rounded-full bg-teal-400" />
-                    위험도 등급별 시각화
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-300">
-                    <span className="w-1.5 h-1.5 rounded-full bg-teal-400" />
                     지역별 상세 조회 기능
                   </li>
                 </ul>
