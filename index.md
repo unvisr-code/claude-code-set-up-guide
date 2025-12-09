@@ -51,4 +51,6 @@ https://climate.gg.go.kr/gcs/cmm/selectMainMap.do?lang=kor#regen_poten
 
 데모영상은 /Users/unvisr/Downloads/claude-code-set-up-guide/public/gg-hackton-demo.mov
 
+그리고 이 영상은 너무 커서 압축이 필요할것입니다.
+
 이것입니다. 

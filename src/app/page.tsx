@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import HeroSection from "@/components/HeroSection";
 import OsSelector, { OS, useDetectOS } from "@/components/OsSelector";
 import StepsSection from "@/components/StepsSection";
+import FloatingCTA from "@/components/FloatingCTA";
 import { windowsWslGuide, windowsNativeGuide, macosGuide } from "@/data/steps";
 
 const guides = {
@@ -24,7 +25,7 @@ export default function Home() {
   const guide = guides[selectedOs];
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pb-24">
       <HeroSection />
       <OsSelector selectedOs={selectedOs} onSelect={setSelectedOs} />
       <StepsSection
@@ -32,6 +33,7 @@ export default function Home() {
         steps={guide.steps}
         preNote={guide.preNote}
       />
+      <FloatingCTA />
     </main>
   );
 }
