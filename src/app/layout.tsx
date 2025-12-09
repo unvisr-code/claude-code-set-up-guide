@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Claude Code 설치 가이드 | 경기 기후 바이브코딩 해커톤",
-  description: "Windows와 macOS에서 Claude Code CLI를 설치하는 방법을 안내합니다.",
+  title: "Pre-Academy 준비사항 가이드 | 경기 기후 바이브코딩 해커톤",
+  description: "해커톤 참가 전 필요한 계정 생성과 Claude Code CLI 설치 방법을 안내합니다.",
   icons: {
     icon: "/gg-bi-logo.png",
     apple: "/gg-bi-logo.png",
   },
   openGraph: {
-    title: "Claude Code 설치 가이드 | 경기 기후 바이브코딩 해커톤",
-    description: "Windows와 macOS에서 Claude Code CLI를 설치하는 방법을 안내합니다.",
+    title: "Pre-Academy 준비사항 가이드 | 경기 기후 바이브코딩 해커톤",
+    description: "해커톤 참가 전 필요한 계정 생성과 Claude Code CLI 설치 방법을 안내합니다.",
     images: [
       {
         url: "/og-image.png",
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Claude Code 설치 가이드 | 경기 기후 바이브코딩 해커톤",
-    description: "Windows와 macOS에서 Claude Code CLI를 설치하는 방법을 안내합니다.",
+    title: "Pre-Academy 준비사항 가이드 | 경기 기후 바이브코딩 해커톤",
+    description: "해커톤 참가 전 필요한 계정 생성과 Claude Code CLI 설치 방법을 안내합니다.",
     images: ["/og-image.png"],
   },
 };

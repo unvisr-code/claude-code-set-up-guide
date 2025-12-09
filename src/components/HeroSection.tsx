@@ -41,14 +41,17 @@ export default function HeroSection() {
 
           {/* Main title */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
-            Claude Code 설치 가이드
+            Pre-Academy
           </h1>
+          <p className="text-xl md:text-2xl text-teal-400 font-medium mb-6">
+            준비사항 가이드
+          </p>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            이 페이지에서는 Windows와 macOS에서
+            해커톤 참가 전 필요한 계정 생성과
             <br className="hidden sm:block" />
-            Claude Code CLI를 설치하는 방법을 안내합니다.
+            Claude Code CLI 설치 방법을 안내합니다.
           </p>
         </div>
       </div>
