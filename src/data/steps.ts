@@ -237,6 +237,27 @@ export const windowsNativeGuide: InstallationGuide = {
             "설치 중 약관 동의를 묻는 메시지가 나오면 'Y'를 입력하고 Enter를 누르세요. 설치가 완료되면 PowerShell을 닫았다가 다시 관리자 권한으로 열어주세요.",
         },
       ],
+      troubleshooting: {
+        title: "winget 명령어가 인식되지 않을 경우",
+        description: "winget은 Microsoft Store의 'App Installer' 안에 포함되어 있습니다. App Installer를 업데이트하면 winget을 사용할 수 있습니다.",
+        steps: [
+          {
+            instruction: "<strong>Microsoft Store</strong> 앱을 실행합니다.",
+          },
+          {
+            instruction: "상단 검색창에 <code>App Installer</code>를 입력합니다.",
+          },
+          {
+            instruction: "검색 결과에서 <strong>App Installer</strong>를 클릭하고, <strong>업데이트(Update)</strong> 또는 <strong>설치(Install)</strong> 버튼을 클릭합니다.",
+          },
+          {
+            instruction: '또는 아래 링크를 브라우저에서 열면 Microsoft Store가 자동으로 실행됩니다: <a href="https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1" target="_blank" class="text-teal-400 underline">App Installer 다운로드 링크</a>',
+          },
+          {
+            instruction: "설치/업데이트 완료 후 PowerShell을 닫았다가 다시 관리자 권한으로 열고, <code>winget</code> 명령어를 다시 시도해 주세요.",
+          },
+        ],
+      },
     },
     {
       number: 3,
