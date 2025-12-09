@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: "Claude Code 설치 가이드 | 경기 기후 바이브코딩 해커톤",
   description: "Windows와 macOS에서 Claude Code CLI를 설치하는 방법을 안내합니다.",
   icons: {
-    icon: "/gg.png",
-    apple: "/gg.png",
+    icon: "/gg-bi-logo.png",
+    apple: "/gg-bi-logo.png",
   },
   openGraph: {
     title: "Claude Code 설치 가이드 | 경기 기후 바이브코딩 해커톤",
